@@ -45,3 +45,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.feature.dolby_enable=true \
     vendor.audio.dolby.ds2.enabled=true \
     vendor.audio.dolby.ds2.hardbypass=true
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/dolby/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += vendor/dolby/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/dolby/sepolicy/vendor
