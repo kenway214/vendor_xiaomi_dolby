@@ -24,3 +24,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     manifest_vendor.dolby.hardware.dms
+
+TARGET_VENDOR_PROP += \
+    vendor/dolby/vendor.prop
