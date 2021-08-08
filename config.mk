@@ -55,6 +55,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.audio.dolby.ds2.enabled=true \
     vendor.audio.dolby.ds2.hardbypass=false \
     persist.vendor.audio_fx.current=dolby \
+    ro.audio.monitorRotation=true \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/dolby/sepolicy/private
