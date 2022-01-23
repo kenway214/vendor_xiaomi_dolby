@@ -1,10 +1,31 @@
 soong_namespace {
 }
 
-prebuilt_etc_xml {
-	name: "manifest_vendor.dolby.hardware.dms",
+android_app_import {
+	name: "daxService",
 	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
+	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "dax_framework_compatibility_matrix.xml",
+	owner: "xiaomi",
+	src: "proprietary/product/etc/vintf/dax_framework_compatibility_matrix.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	product_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "dax_manifest.xml",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/dax_manifest.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
