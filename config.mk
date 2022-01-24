@@ -38,5 +38,9 @@ PRODUCT_PACKAGES += \
     dax_manifest.xml \
     dax_framework_compatibility_matrix.xml
 
-TARGET_VENDOR_PROP += \
-    vendor/dolby/vendor.prop
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.vendor.audio.dolby.dax.support=true \
+	ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+    ro.feature.dolby_enable=true \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=true
