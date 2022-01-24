@@ -8,5 +8,6 @@ allow daxservice_app {
   autofill_service
   bluetooth_manager_service
   gpu_service
+  game_service
   surfaceflinger_service
 }:service_manager find;
