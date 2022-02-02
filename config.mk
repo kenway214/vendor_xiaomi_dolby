@@ -38,9 +38,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/proprietary/product/e
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.audio.dolby.dax.support=true \
 	ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
-    ro.feature.dolby_enable=true \
-    vendor.audio.dolby.ds2.enabled=true \
-    vendor.audio.dolby.ds2.hardbypass=true
+    ro.feature.dolby_enable=true
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/dolby/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += vendor/dolby/sepolicy/public
