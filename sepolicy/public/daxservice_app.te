@@ -1,1 +1,4 @@
 type daxservice_app, domain;
+
+allow daxservice_app media_session_service:service_manager find;
+allow daxservice_app media_communication_service:service_manager find;
