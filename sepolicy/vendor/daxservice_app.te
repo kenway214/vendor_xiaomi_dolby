@@ -1,4 +1,11 @@
 binder_call(daxservice_app, hal_dms_default)
+get_prop(daxservice_app, ctl_default_prop)
+get_prop(daxservice_app, vendor_audio_prop)
 
-allow daxservice_app hal_dms_hwservice:hwservice_manager find;
+allow daxservice_app adsprpcd_file:dir { search getattr read };
 allow daxservice_app content_capture_service:service_manager find;
+allow daxservice_app hal_camera_default:binder { call transfer };
+allow daxservice_app hal_dms_hwservice:hwservice_manager find;
+allow daxservice_app vendor_camera_data_file:dir getattr;
+allow daxservice_app vendor_default_prop:file { open getattr map };
+allow daxservice_app vendor_sysfs_kgsl:file { read open getattr };

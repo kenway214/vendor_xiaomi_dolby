@@ -11,5 +11,5 @@ binder_call(hal_dms_default, daxservice_app)
 binder_call(hal_dms_default, hal_audio_default)
 binder_call(hal_dms_default, platform_app)
 
-allow hal_dms_default vendor_audio_data_file:dir rw_dir_perms;
+allow hal_dms_default vendor_audio_data_file:dir { create_dir_perms unlink };
 allow hal_dms_default vendor_audio_data_file:file create_file_perms;
