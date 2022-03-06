@@ -2,6 +2,22 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "DaxUI",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+	overrides: [
+		"AudioFX",
+		"MusicFX",
+	],
+}
+
+android_app_import {
 	name: "daxService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/daxService/daxService.apk",

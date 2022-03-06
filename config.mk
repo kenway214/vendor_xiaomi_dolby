@@ -2,7 +2,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/dolby
 
 PRODUCT_COPY_FILES += \
+    vendor/dolby/proprietary/system_ext/etc/permissions/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
     vendor/dolby/proprietary/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
+    vendor/dolby/proprietary/system_ext/etc/sysconfig/config-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui.xml \
     vendor/dolby/proprietary/system_ext/etc/sysconfig/config-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxservice.xml \
     vendor/dolby/proprietary/system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml \
     vendor/dolby/proprietary/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
@@ -41,12 +43,17 @@ PRODUCT_COPY_FILES += \
     vendor/dolby/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so
 
 PRODUCT_PACKAGES += \
+    DaxUI \
     daxService
 
 DEVICE_MANIFEST_FILE += vendor/dolby/proprietary/vendor/etc/vintf/manifest/dax_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/proprietary/product/etc/vintf/dax_framework_compatibility_matrix.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.product.device.db=OP_DEVICE \
+    ro.vendor.product.manufacturer.db=OP_PHONE \
+    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.hardbypass=false \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/dolby/sepolicy/private
