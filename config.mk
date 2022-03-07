@@ -52,8 +52,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/proprietary/product/e
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.product.device.db=OP_DEVICE \
     ro.vendor.product.manufacturer.db=OP_PHONE \
-    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.enabled=true \
     vendor.audio.dolby.ds2.hardbypass=false \
+    persist.vendor.audio_fx.current=dolby \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/dolby/sepolicy/private
