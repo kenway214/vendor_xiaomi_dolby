@@ -8,8 +8,18 @@ Including these blobs on other platforms is highly discouraged
 
 Because it can causes bootloop, or several other problems
 
+Basically, this is combining OnePlus Dolby blobs and Device specific Dolby blobs
+
+So, if you want to try OnePlus Dolby for your own device, check this repo's proprietary-files.txt as reference:
+https://gitlab.com/someone5678/vendor_dolby/-/blob/twelve/proprietary-files.txt
+
 ## Note for including Dolby Atmos
-You need to include the config.mk's path to your device.mk
+First, Remove all duplicated blobs from your device tree
+
+Check this repo's proprietary-files.txt as reference:
+https://gitlab.com/someone5678/vendor_dolby/-/blob/twelve/proprietary-files.txt
+
+Then, You need to include the config.mk's path to your device.mk
 
 ```$(call inherit-product-if-exists, vendor/dolby/config.mk)```
 
