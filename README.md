@@ -23,6 +23,14 @@ Then, You need to include the config.mk's path to your device.mk
 
 ```$(call inherit-product-if-exists, vendor/dolby/config.mk)```
 
+And, You must change VINTF manifests inclusion method from device.mk by changing
+
+```:=``` to ```+=```
+
+For now required manifest files are
+```DEVICE_MANIFEST_FILE += ...```
+```DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += ...```
+
 Additionally, You can also set AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP flag to true in your BoardConfig.mk
 for better Dolby DS2 support
 
