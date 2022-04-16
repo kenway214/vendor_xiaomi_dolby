@@ -58,6 +58,4 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.audio.monitorRotation=true \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/dolby/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += vendor/dolby/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += vendor/dolby/sepolicy/vendor
