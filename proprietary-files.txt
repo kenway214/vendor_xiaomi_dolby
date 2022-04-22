@@ -2,6 +2,7 @@
 system_ext/etc/permissions/privapp-com.dolby.daxservice.xml
 system_ext/etc/sysconfig/config-com.dolby.daxservice.xml
 system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml
+-system_ext/priv-app/daxService/daxServices.apk
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/media_codecs_dolby_audio.xml
