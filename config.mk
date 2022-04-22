@@ -46,8 +46,8 @@ PRODUCT_PACKAGES += \
     DaxUI \
     daxService
 
-DEVICE_MANIFEST_FILE += vendor/dolby/proprietary/vendor/etc/vintf/manifest/dax_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/proprietary/product/etc/vintf/dax_framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += vendor/dolby/vintf/dax_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/vintf/framework_compatibility_matrix.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.product.device.db=OP_DEVICE \
