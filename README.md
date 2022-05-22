@@ -23,7 +23,7 @@ Then, You need to include the config.mk's path to your device.mk
 
 ```$(call inherit-product-if-exists, vendor/dolby/config.mk)```
 
-And, You must change VINTF manifests inclusion method from device.mk by changing
+And, You must change VINTF manifests inclusion method from BoardConfig.mk by changing
 
 ```:=``` to ```+=```
 
