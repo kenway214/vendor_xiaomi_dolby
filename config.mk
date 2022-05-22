@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     daxService
 
 DEVICE_MANIFEST_FILE += vendor/dolby/vintf/dax_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/vintf/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/vintf/dax_framework_compatibility_matrix.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.product.device.db=OP_DEVICE \
