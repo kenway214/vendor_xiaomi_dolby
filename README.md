@@ -37,8 +37,9 @@ for better Dolby DS2 support
 ```AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true```
 
 For other audio configs for better support, please check these github device commits
-[[1]](https://github.com/someone5678/device_xiaomi_sweet/commit/05ac47a541976ffc06e9996b28cec62f58b82aa2)
-[[2]](https://github.com/someone5678/device_xiaomi_sweet/commit/fdfae8f469bfdc6bb1135eb9e31e7f3311de5e96)
-[[3]](https://github.com/someone5678/device_xiaomi_sweet/commit/c247719b9407b8f6ee52a0ffea5e4a53a97b4447)
-[[4]](https://github.com/someone5678/device_xiaomi_sweet/commit/d878aa79a24f19076e4db13ca830768874d5c92b)
-[[5]](https://github.com/someone5678/device_xiaomi_sweet/commit/49715a8c4a8d7c78d6c5d810f2a7a4880b90cae2)
+[[1]](https://github.com/someone5678/device_xiaomi_sweet/commit/b10c3485a9ab1a0617f8c7bb3b311edeaf79624b)
+[[2]](https://github.com/someone5678/device_xiaomi_sweet/commit/52e0eb33443e9cff034e9868dce5043444d4256c)
+[[3]](https://github.com/someone5678/device_xiaomi_sweet/commit/8a7ca332cab6becbbfca652b5123a54d1299b0ca)
+[[4]](https://github.com/someone5678/device_xiaomi_sweet/commit/61184dd16f56955a1c70ec80d2bf5c4f7da9d7d6)
+[[5]](https://github.com/someone5678/device_xiaomi_sweet/commit/64d9aa79f6b95760ef6d9ae62b0bdc491ebee6c8)
+[[6]](https://github.com/someone5678/device_xiaomi_sweet/commit/1f813265261b82147e7c79359e49dc3a44d605c8)
