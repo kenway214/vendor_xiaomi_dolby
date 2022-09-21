@@ -46,6 +46,9 @@ PRODUCT_PACKAGES += \
     DaxUI \
     daxService
 
+PRODUCT_PACKAGES += \
+    init.dolby.rc
+
 DEVICE_MANIFEST_FILE += vendor/dolby/vintf/dax_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/dolby/vintf/dax_framework_compatibility_matrix.xml
 
