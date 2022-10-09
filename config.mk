@@ -61,4 +61,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.audio.monitorRotation=true \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.df.effect.conflict=1 \
+    ro.vendor.audio.dolby.dax.support=true \
+    persist.vendor.audio.delta.refresh=true \
+    ro.vendor.audio.dolby.surround.enable=true
+
 BOARD_VENDOR_SEPOLICY_DIRS += vendor/dolby/sepolicy/vendor
